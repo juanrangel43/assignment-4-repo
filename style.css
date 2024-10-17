@@ -1,0 +1,191 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/*fonts courtesy of fontsquirell.com*/
+@font-face 
+{
+  font-family: "quicksand";
+  src: url("fonts/quicksand-regular-webfont.woff2") format("woff2"),
+       url("fonts/quicksand-regular-webfont.woff") format("woff");
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face 
+{
+  font-family: "cantarell";
+  src: url("fonts/cantarell-regular-webfont.woff2") format("woff2"),
+       url("fonts/cantarell-regular-webfont.woff") format("woff");
+       font-weight: nomral;
+       font-style: normal;
+}
+
+* 
+{
+  font-family:  cantarell, serif;
+  font-size: 0.625rem;
+}
+
+h1, h2
+{
+  font-family: quicksand, serif;
+  font-size: 5rem;
+  letter-spacing: .25rem;
+}
+
+
+p, ul, ol
+{
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+ul, ol
+{
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+section li, aside li
+{
+  padding-left: 2rem;
+  background-image: url(nucleus.svg);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+li
+{
+  font-size: 1.75rem;
+}
+
+body
+{
+  line-height: 1.4;
+  letter-spacing: .075rem;
+  word-spacing: .5rem;
+}
+
+section > h2 + p
+{
+  text-indent: 4rem;
+}
+
+a
+{
+  font-size: 1.75rem;
+}
+
+a:visited
+{
+  color: #a66;
+}
+
+a:focus
+{
+  background-color: rgb(246, 205, 205);
+  text-decoration: none;
+  outline: dotted;
+}
+
+a:hover
+{
+  color: #a66;
+  text-decoration: none;
+}
+
+a:active
+{
+  color: white;
+}
+
+a[href^="http"]::after
+{
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.25rem;
+
+  background-size: 100%;
+  background-image: url("external-link-52.png");
+}
+
+nav ul 
+{
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+nav li 
+{
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+nav li a 
+{
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 0.5rem solid #a66;
+}
+
+nav li a:focus, nav li a:hover 
+{
+  color: white;
+  background: #a66;
+}
+
+nav li a:active 
+{
+  color: white;
+  background: #a66;
+}
